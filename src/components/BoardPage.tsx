@@ -161,13 +161,13 @@ export default function BoardPage() {
       newBoard[selectedSquare.row][5] = newBoard[selectedSquare.row][7];
       newBoard[selectedSquare.row][7] = null;
       if (newBoard[selectedSquare.row][5]) {
-        newBoard[selectedSquare.row][5].hasMoved = true;
+        newBoard[selectedSquare.row][5]!.hasMoved = true;
       }
     } else if (special === "castle-q") {
       newBoard[selectedSquare.row][3] = newBoard[selectedSquare.row][0];
       newBoard[selectedSquare.row][0] = null;
       if (newBoard[selectedSquare.row][3]) {
-        newBoard[selectedSquare.row][3].hasMoved = true;
+        newBoard[selectedSquare.row][3]!.hasMoved = true;
       }
     }
 
