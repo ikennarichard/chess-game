@@ -6,7 +6,7 @@ A chess game built with React and Tailwind CSS. Play against a friend, enjoy smo
 
 ## 🚀 Live Demo
 
-👉 [Play the Chess Game Here](https://your-live-app-link.com)
+👉 [Play the Chess Game Here](https://sparkling-praline-3668b1.netlify.app)
 
 ---
 
