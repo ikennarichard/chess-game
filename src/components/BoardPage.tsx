@@ -15,7 +15,6 @@ import {
   getValidMoves,
   hasAnyLegalMoves,
   isInCheck,
-  letterMap,
   moveToNotation,
 } from "../lib/contants/utils";
 import { PromotionModal } from "./PromotionModal";
@@ -444,17 +443,6 @@ export default function BoardPage() {
             aria-label="Chess board container"
           >
             <div className="flex items-start gap-3">
-              <div className="hidden sm:flex flex-col justify-between text-gray-300 text-sm">
-                {Array.from({ length: 8 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="h-[min(11vw,48px)] flex items-center justify-center"
-                  >
-                    {8 - i}
-                  </div>
-                ))}
-              </div>
-
               <div className="w-[min(92vw,36rem)]">
                 <div className="grid grid-cols-8 gap-0 rounded overflow-hidden border border-gray-700">
                   {board.map((row, r) =>
@@ -489,17 +477,6 @@ export default function BoardPage() {
               </div>
 
               <div className="hidden sm:block w-4" />
-            </div>
-
-            <div className="mt-3 flex justify-center gap-0 select-none">
-              {letterMap.map((l) => (
-                <div
-                  key={l}
-                  className="w-[min(11.5vw,4.5rem)] text-center text-gray-300 text-sm"
-                >
-                  {l}
-                </div>
-              ))}
             </div>
           </div>
 
